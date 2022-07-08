@@ -7,6 +7,7 @@ namespace Todo.Domain.Models
     {
         private List<TodoItem> _todoItems = new List<TodoItem>();
 
+        private User() {}
         public User(Guid userId, string name)
         {
             Id = Guid.NewGuid();

@@ -4,6 +4,7 @@ namespace Todo.Domain.Models
 {
     public class TodoItem
     {
+        private TodoItem() {}
         public TodoItem(string title, string comment)
         {
             Id = Guid.NewGuid();
