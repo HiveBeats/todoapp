@@ -24,9 +24,9 @@ namespace Todo.Domain.Models
             
             Name = name;
         }
-        public void AddItem(TodoItem item)
+        public void AddItem(string title, string comment)
         {
-            _todoItems.Add(item);
+            _todoItems.Add(new TodoItem(title, comment));
         }
 
         public void RemoveItem(TodoItem item)

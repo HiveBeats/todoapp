@@ -5,7 +5,7 @@ namespace Todo.Domain.Models
     public class TodoItem
     {
         private TodoItem() {}
-        public TodoItem(string title, string comment)
+        internal TodoItem(string title, string comment)
         {
             Title = title;
             Comment = comment;
