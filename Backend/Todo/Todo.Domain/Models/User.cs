@@ -10,7 +10,6 @@ namespace Todo.Domain.Models
         private User() {}
         public User(Guid userId, string name)
         {
-            Id = Guid.NewGuid();
             ChangeName(name);
         }
 

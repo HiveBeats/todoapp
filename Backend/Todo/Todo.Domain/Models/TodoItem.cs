@@ -7,7 +7,6 @@ namespace Todo.Domain.Models
         private TodoItem() {}
         public TodoItem(string title, string comment)
         {
-            Id = Guid.NewGuid();
             Title = title;
             Comment = comment;
             DateCreated = DateTime.UtcNow;
